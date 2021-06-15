@@ -1,0 +1,11 @@
+<%- include('../partials/header') %>
+    <ul>
+      <% skills.forEach(function(s) { %>
+        <li>
+          <a href="/skills/<%= s.id %>"><%= s.skill %></a>
+            - 
+          <%= s.classType === 'CIT'  ? 'CIT' : 'DMD' %>
+        </li>
+      <% }); %>
+    </ul>
+<%- include('../partials/footer') %>
