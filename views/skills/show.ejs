@@ -1,6 +1,7 @@
 <%- include('../partials/header') %>
 <div>
 <h3><%= skill.skill %></h3>
-<h3>Course Designation: <%= skill.classType === 'CIT' ? 'CIT' : 'DMD' %></h3>
+<h3>Course Designation: <%= skill.classType %></h3>
+<a href="/skill/<%= skill.id %>/edit">EDIT</a>
 </div>
 <%- include('../partials/footer') %>
