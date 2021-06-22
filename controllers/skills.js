@@ -35,9 +35,8 @@ function newDelete(req, res) {
 }
 
 function update(req, res) {
-  //req.body.done = !!req.body.done;
-  Skill.update(req.params.id, req.body);
-  res.redirect(`/skills/${req.params.id}`);
+  Skill.update(req.params.skl, req.body);
+  res.redirect(`/skills/${req.params.skl}`);
 }
 
 function edit(req, res) {
